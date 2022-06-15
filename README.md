@@ -17,7 +17,7 @@
 | 6 | 실시간 뉴스 제목, 사진, 짧은 설명 불러오기 |
 
 
-📱 구현 장면
+## 📱 구현 장면
 
 
 <img src="https://user-images.githubusercontent.com/88819825/173805155-818d5288-962d-4e8c-9810-40edda268162.png" width="200" height="370"><img src="https://user-images.githubusercontent.com/88819825/173806159-240d2b83-2963-4649-a9fb-d7a5abbe9109.png" width="200" height="370"><img src="https://user-images.githubusercontent.com/88819825/173806318-a81fcccf-4c2d-4767-a426-d4645e053597.png" width="200" height="200">
