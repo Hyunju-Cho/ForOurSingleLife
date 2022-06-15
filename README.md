@@ -13,4 +13,4 @@
 
 
 📱 구현 장면
-![image](https://user-images.githubusercontent.com/88819825/173805155-818d5288-962d-4e8c-9810-40edda268162.png)
+<img src="https://user-images.githubusercontent.com/88819825/173805155-818d5288-962d-4e8c-9810-40edda268162.png" width="700" height="370">
