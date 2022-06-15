@@ -1,5 +1,6 @@
 # 🙍‍♀️ForOurSingleLife🙍‍♂️
-1인가구에 초점을 맞춘 안드로이드 앱 <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=React&logoColor=white"/>
+1인가구에 초점을 맞춘 안드로이드 앱 
+<img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=React&logoColor=white"/>
 
 
 | Index | 기능 |
