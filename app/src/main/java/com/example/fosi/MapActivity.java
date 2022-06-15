@@ -408,7 +408,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
 
         new NRPlaces.Builder()
                 .listener(MapActivity.this)
-                .key("AIzaSyAUzTfTTBdB1awTR77NN_qXY2BOSvrOhAA")
+                .key("API키")
                 .latlng(location.latitude,location.longitude)//현재 위치
                 .radius(2000)//2000미터 내에 검색
                 .type(PlaceType.HOSPITAL)//병원
@@ -423,7 +423,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
 
         new NRPlaces.Builder()
                 .listener(MapActivity.this)
-                .key("AIzaSyAUzTfTTBdB1awTR77NN_qXY2BOSvrOhAA")
+                .key("API키")
                 .latlng(location.latitude,location.longitude)
                 .radius(2000)
                 .type(PlaceType.PHARMACY)

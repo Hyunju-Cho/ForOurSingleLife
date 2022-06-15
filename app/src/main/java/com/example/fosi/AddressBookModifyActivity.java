@@ -141,28 +141,6 @@ public class AddressBookModifyActivity extends AppCompatActivity {
                 addData.mNumber = etnum.getText().toString();
 
                 mAdapter.add(0, addData);//첫 번째 인덱스에 People을 넘겨줌
-
-                //mysql로 전송
-//                Response.Listener<String> responseListener=new Response.Listener<String>() {
-//                    @Override
-//                    public void onResponse(String response) {
-//                        try {
-//                            JSONObject jsonObject=new JSONObject(response);
-//                            boolean success=jsonObject.getBoolean("success");//php문 보면 response를 success로 둠
-//                            if(success){
-//                                Toast.makeText(getApplicationContext(),"전화번호 등록에 성공하였습니다.",Toast.LENGTH_SHORT).show();
-//                            }else{
-//                                Toast.makeText(getApplicationContext(),"전화번호 등록에 실패하였습니다.",Toast.LENGTH_SHORT).show();
-//                                return;
-//                            }
-//                        } catch (JSONException e) {
-//                            e.printStackTrace();
-//                        }
-//                    }
-//                };
-//                AddressRequest addressRequest=new AddressRequest(addData.mName,addData.mNumber,responseListener);
-//                RequestQueue queue= Volley.newRequestQueue(this);
-//                queue.add(addressRequest);
                 insertData();
 
                 break;
@@ -184,7 +162,7 @@ public class AddressBookModifyActivity extends AppCompatActivity {
         }else if(num.isEmpty()){
             Toast.makeText(this,"전화번호를 입력하세요",Toast.LENGTH_SHORT).show();
         }else{
-            StringRequest request=new StringRequest(Request.Method.POST, "http://192.168.78.126/AddressWrite.php", new Response.Listener<String>() {
+            StringRequest request=new StringRequest(Request.Method.POST, "http://IP주소/AddressWrite.php", new Response.Listener<String>() {
                 @Override
                 public void onResponse(String response) {
                     if(response.equalsIgnoreCase("Data Inserted")){
@@ -217,26 +195,5 @@ public class AddressBookModifyActivity extends AppCompatActivity {
         }
 
     }
-
-
-//    public class AddressRequest extends StringRequest {
-//
-//        final static private String URL="http://192.168.123.105/AddressWrite.php";
-//        private Map<String,String> map;
-//
-//        public AddressRequest(String mName, String mNumber, Response.Listener<String> listener){
-//            super(Method.POST,URL,listener,null);
-//
-//            map=new HashMap<>();
-//            map.put("mName",mName);
-//            map.put("mNumber",mNumber);
-//        }
-//
-//        @Override
-//        protected Map<String, String> getParams() throws AuthFailureError {
-//            return map;
-//        }
-//
-//    }
 
 }

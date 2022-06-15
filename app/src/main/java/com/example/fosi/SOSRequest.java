@@ -9,7 +9,7 @@ import java.util.Map;
 
 public class SOSRequest extends StringRequest {
 
-    final static private String URL="http://192.168.78.126/sos.php";
+    final static private String URL="http://IP주소/sos.php";
     private Map<String,String> map;
 
     public SOSRequest(String sos, Response.Listener<String> listener){

@@ -49,7 +49,7 @@ public class AddressBookActivity extends AppCompatActivity {
     ListView listView=null;
     MyAdapter adapter;
     public static ArrayList<PhoneNumber> phoneNumberArrayList=new ArrayList<>();
-    String url="http://192.168.78.126/RetrieveAddress.php";
+    String url="http://IP주소/RetrieveAddress.php";
     PhoneNumber phoneNumber;
     Button bt_add;
 
@@ -105,7 +105,7 @@ public class AddressBookActivity extends AppCompatActivity {
     //데이터 지우기
     private void deleteData(final String num) {
 
-        StringRequest request=new StringRequest(Request.Method.POST, "http://192.168.78.126/DeleteAddress.php", new Response.Listener<String>() {
+        StringRequest request=new StringRequest(Request.Method.POST, "http://IP주소/DeleteAddress.php", new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 if(response.equalsIgnoreCase("Data Deleted")){

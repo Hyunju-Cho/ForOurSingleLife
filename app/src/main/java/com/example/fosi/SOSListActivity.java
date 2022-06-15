@@ -24,7 +24,7 @@ import java.nio.Buffer;
 
 public class SOSListActivity extends AppCompatActivity {
 
-    String urladdress="http://192.168.78.126/soslist.php";
+    String urladdress="http://IP주소/soslist.php";
     String[] time;
     ListView listView;
     BufferedInputStream is;

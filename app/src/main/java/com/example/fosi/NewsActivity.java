@@ -56,7 +56,7 @@ public class NewsActivity extends AppCompatActivity {
 
     public void getNews(){
 
-        String url="https://newsapi.org/v2/top-headlines?country=kr&apiKey=5c72fa63ec0644c4a88a0bedef324088";
+        String url="https://newsapi.org/v2/top-headlines?country=kr&apiKey=API키";
 
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {

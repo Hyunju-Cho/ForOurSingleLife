@@ -9,7 +9,7 @@ import java.util.Map;
 
 public class LoginRequest extends StringRequest {
 
-    final static private String URL="http://192.168.78.126/Login.php"; //php서버, 로그인 처리하는 SQL 작성됨
+    final static private String URL="http://IP주소/Login.php"; //php서버, 로그인 처리하는 SQL 작성됨
     private Map<String,String> map;//DB 값 받아옴
 
     public LoginRequest(String userID, String userPassword, Response.Listener<String> listener){
